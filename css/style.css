@@ -24,4 +24,108 @@ body {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+      .container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    width: 100%;
+}
+
+.rating-box{
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to top, #121417 0% ,  #252d37 100%);
+    border-radius: 1rem;
+}
+
+
+/* ====== Rating state ====== */
+
+.rating-state.remove {
+    display: none;
+}
+
+.star {
+    position: relative;
+    top: 30px;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #38414d;
+    border-radius: 50%;
+}
+
+.text-content {
+    margin: 3rem 1rem 2rem 2rem;
+}
+
+.text-content p:nth-child(1) {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: .0625rem;
+    word-spacing: .125rem;
+} 
+
+.text-content p:nth-child(2){
+    color: #959eac;
+}
+
+.rate-button {
+    display: flex;
+    justify-content: space-around;
+    margin: auto 1rem;
+}
+
+.rate-num {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #252d37;
+    color: #959eac;
+    cursor: pointer;
+    border: none;
+}
+
+.rate-num:hover {
+    background-color: #fb7413;
+    color: #ffffff;
+}
+
+.rate-num:focus {
+    background-color: #959eac;
+    color: #ffffff;
+}
+
+.submit-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+.submit-button button {
+    width: 320px;
+    height: 40px;
+    border-radius: 1.875rem;
+    border: none;
+    background-color: #fb7413;
+    color: #ffffff;
+    cursor: pointer;
+    letter-spacing: .125rem;
+}
+
+.submit-button button:hover {
+    background-color: #ffffff;
+    color: #fb7413;
+}
+
+.alarm-msg {
+    color: #ff0000;
+    margin-top: 5px;
+}
+
 
